@@ -3,6 +3,8 @@ import "./App.css";
 import RecipeCreate from "./RecipeCreate";
 import RecipeList from "./RecipeList";
 import RecipeData from "./RecipeData"
+const url = `${process.env.REACT_APP_API_BASE_URL}/constellations`;
+
 
 function App() {
   const [posts, setPosts] = useState(RecipeData);
